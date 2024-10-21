@@ -1,0 +1,47 @@
+.SideBar {
+    height: 100vh;
+    width: 300px;
+    background-color: white;
+    position: fixed;
+    top: 70px;
+    box-shadow: 0 1px 5px rgba(211, 211, 211, 0.5);
+}
+.SideBar hr {
+width: 90%;
+margin: auto;
+}
+.SideBar h2 {
+    font-size: 25px;
+    margin-left: 15px;
+}
+.SideBar h3 {
+    font-size: 16px;
+}
+.Subscriptions,
+.Data,
+.Categories {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.Subscriptions div,
+.Data div,
+.Categories div {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.Subscriptions img {
+    margin-left: 15px;
+    border-radius: 50%;
+    width: 35px;
+}
+
+.Data img,
+.Categories img {
+    margin-left: 15px;
+    width: 30px;
+}

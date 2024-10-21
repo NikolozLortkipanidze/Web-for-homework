@@ -1,0 +1,92 @@
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    transition: 350ms;
+}
+
+body {
+    background-color: #F0F0F0;
+}
+
+button,
+input,
+textarea {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    /* Remove outline on focus */
+}
+
+img {
+    cursor: pointer;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: white;
+    border-bottom: 1px solid lightgray;
+    height: 70px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+
+/*logo and searchbar*/
+.HeaderSection1,
+.HeaderSection2 {
+    display: flex;
+    align-items: center;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+
+.HeaderSection1 img {
+    width: 62px;
+}
+
+
+
+.SearchDiv {
+    display: flex;
+    align-items: center;
+    padding-right: 15px;
+    border-radius: 28px;
+    background-color: #eeeeee;
+}
+
+.Search {
+    background-color: #eeeeee;
+    width: 200px;
+    height: 42px;
+    border-radius: 25px;
+    margin-left: 25px;
+}
+
+header .SearchImg {
+    width: 15px;
+    padding: 15px;
+}
+
+header .SearchImg:hover {
+    transform: scale(1.2);
+}
+
+/*user profile and navigaton*/
+.HeaderSection2 {
+    color: rgba(0, 0, 0, 0.8);
+    gap: 25px;
+    font-size: 10px;
+}
+.HeaderSection2 button {
+ border-radius: 8px;
+    background-color: #eeeeee;
+    height: 25px;
+    width: 70px;
+}
+.HeaderSection2 img {
+    width: 50px;
+    border-radius: 50%;
+}
