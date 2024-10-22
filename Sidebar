@@ -1,0 +1,31 @@
+const Sidebar = document.querySelector('.SideBar');
+const SidebarBTN = document.querySelector('.SidebarCloseOpen');
+const main = document.querySelector('main');
+let SidebarStatus = false
+
+SidebarBTN.addEventListener('click', function () {
+    if (SidebarStatus === false) {
+        SidebarBTN.style.right = '10px'
+        SidebarBTN.src = "/images/sidebar (1).png"
+        Sidebar.style.width = '50px'
+        main.style.marginLeft = '0'
+        SidebarStatus = true
+        setTimeout(() => {
+            Sidebar.querySelectorAll('section').forEach(function (Section) {
+                Section.style.display = 'none'
+            });
+        }, 50);
+    }
+    else {
+        SidebarBTN.style.right = '5px'
+        SidebarBTN.src = "/images/sidebar.png"
+        Sidebar.style.width = '250px'
+        main.style.marginLeft = '300px'
+        SidebarStatus = false
+        setTimeout(() => {
+            Sidebar.querySelectorAll('section').forEach(function (Section) {
+                Section.style.display = 'flex'
+            });
+        }, 200);
+    }
+});
